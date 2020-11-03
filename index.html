@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body> 
-        <header>
-            <div class="container container-nav">
-                <div class="site-title">
-                    <h1>Living the social life</h1>
-                    <p class="subtitle">A blog exploring minimalism in life</p>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Recent posts</a></li>
-                    </ul>
-                </nav>
-            </div> <!-- / .container -->
-        </header>
-        
-        
-    </body>
+
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="container container-nav">
+			<div class="site-title">
+				<h1>Living the social life</h1>
+				<p class="subtitle">A blog exploring minimalism in life</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About me</a></li>
+					<li><a href="#">Recent posts</a></li>
+				</ul>
+			</nav>
+		</div> <!-- / .container -->
+	</header>
+
+	<div class="container">
+    <!-- Use main to indicate the main content. Accesibility reason, more than one per page will mess up the Accesibility. -->
+		<main>
+      <!-- using the tags article for the posts -->
+      <article class="article-featured">
+        <h2></h2>
+        <p></p>
+        <a href="#">Continue reading...</a>
+      </article>
+      <article class="article-recent"></article>
+      <article class="article-recent"></article>
+      <article class="article-recent"></article>
+		</main>
+
+    <!-- In this case using the aside tag for the widgets of the sidebar -->
+		<aside class="sidebar">
+			<div class="widget"></div>
+			<div class="widget"></div>
+		</aside>
+
+	</div> <!-- / .container -->
+
+
+	<footer>
+		<p>This is the footer</p>
+		<p></p>
+	</footer>
+
+
+</body>
+
 </html>
