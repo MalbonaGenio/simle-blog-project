@@ -25,31 +25,83 @@
 	</header>
 
 	<div class="container">
-    <!-- Use main to indicate the main content. Accesibility reason, more than one per page will mess up the Accesibility. -->
+		<!-- Use main to indicate the main content. Accesibility reason, more than one per page will mess up the Accesibility. -->
 		<main>
-      <!-- using the tags article for the posts -->
-      <article class="article-featured">
-        <h2></h2>
-        <p></p>
-        <a href="#">Continue reading...</a>
+			<!-- using the tags article for the posts -->
+			<article class="article-featured">
+        <!-- we want to show the img first but we will do it with a flex property on the CSS side. Put the title first for Accesibility so the screen reader will read the title first and then the img -->
+				<h2 class="article-title">Finding simplicity in life</h2>
+				<img src="" alt="" class="article-img"/>
+				<p class="article-info">July 23, 2019 | 3 comments</p>
+        <p class="article-body">Life can get complicated really quickly, but it doesn't have to be! There are many ways to simplify your life, a few of which we've explored in the past. This week we're taking a bit of a approach though, in how you can find simplicity in the life you already living.</p>
+				<a href="#" class="article-read-more">continue reading</a>
+			</article>
+
+			<article class="article-recent">
+        <div class="article-recent-main">
+          <h2 class="article-title"></h2>
+          <p class="article-body"></p>
+          <a href="#" class="article-read-more"></a>
+        </div>
+
+        <div class="article-recent-secondary">
+          <img src="" alt="" class="article-img"/>
+        </div>
       </article>
-      <article class="article-recent"></article>
-      <article class="article-recent"></article>
-      <article class="article-recent"></article>
+
+      <article class="article-recent">
+        <div class="article-recent-main">
+          <h2 class="article-title"></h2>
+          <p class="article-body"></p>
+          <a href="#" class="article-read-more"></a>
+        </div>
+
+        <div class="article-recent-secondary">
+          <img src="" alt="" class="article-img"/>
+        </div>
+      </article>
+
+      <article class="article-recent">
+        <div class="article-recent-main">
+          <h2 class="article-title"></h2>
+          <p class="article-body"></p>
+          <a href="#" class="article-read-more"></a>
+        </div>
+
+        <div class="article-recent-secondary">
+          <img src="" alt="" class="article-img"/>
+        </div>
+      </article>
+
 		</main>
 
-    <!-- In this case using the aside tag for the widgets of the sidebar -->
+		<!-- In this case using the aside tag for the widgets of the sidebar -->
 		<aside class="sidebar">
-			<div class="widget"></div>
-			<div class="widget"></div>
+      <!-- widget sidebar about me -->
+			<div class="sidebar-widget">
+        <h2 class="widget-title"></h2>
+        <img src="" alt="" class="widget-img"/>
+        <p class="widget-body"></p>
+      </div>
+
+      <!-- widget sidebar recent posts -->
+			<div class="sidebar-widget">
+        <h2 class="widget-title"></h2>
+        <div class="widget-recent-post">
+          <!-- we want to show the img first but we will do it with a flex property on the CSS side. Put the title first for Accesibility so the screen reader will read the title first and then the img -->
+          <h3 class="widget-recent-post-title"></h3>
+          <img src="" alt="" class="widget-img"
+        </div>
+
+      </div>
 		</aside>
 
 	</div> <!-- / .container -->
 
 
 	<footer>
-		<p>This is the footer</p>
-		<p></p>
+		<p>Living the Simple Life</p>
+		<p>Copyright 2019</p>
 	</footer>
 
 
