@@ -11,6 +11,12 @@ body {
   font-size: 1.125rem;
 }
 
+img {
+  max-width: 100%;
+  /* display: block to solve issue with the little spacing when they are inline */
+  display: block;
+}
+
 /* =================
 Typography
 ================= */
@@ -93,7 +99,7 @@ Layout
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
 }
