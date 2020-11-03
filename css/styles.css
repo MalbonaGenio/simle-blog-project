@@ -5,27 +5,82 @@ font-family: 'Ubuntu', sans-serif;
 */
 
 body {
-    margin: 0;
-    font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  font-size: 1.125rem;
 }
 
 /* =================
 Typography
 ================= */
 
-h1 {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    color: #143774;
-    font-size: 2rem;
-    margin: 0;
+h1,
+h2,
+h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #143774;
 }
 
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+a {
+  color: #1792D2;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* logo subtitle */
 .subtitle {
-    font-weight: 700;
-    color: #1792d2;
-    font-size: .75rem;
-    margin: 0;
+  font-weight: 700;
+  color: #1792d2;    
+  font-size: .75rem;
+  margin: 0;
+}
+
+/* post title */
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-body 
+.article-info{
+  color: #707070;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  font-weight: 700;
+  color: #1792D2;
+  text-decoration: none;
+}
+
+
+
+/* on mouse hover change of color and adding underline back */
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.article-info {
+  font-weight: 300;
 }
 
 /* =================
