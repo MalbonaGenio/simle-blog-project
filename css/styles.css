@@ -99,32 +99,34 @@ Layout
     margin: 0 auto;
 }
 
+
+/* to go with a mobile first design we put the flex direction colum as a default
+and we will use the mediaquery with min-width to change to a two column layout when
+min-width: 675px; */
 .container-flex {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 header {
     background: #f8f8f8;
     padding: 2em 0;
+    text-align: center;
 }
 
-@media (max-width: 675px) {
+@media (min-width: 675px) {
     .container-flex {
-        flex-direction: column;
+        flex-direction: row;
     }
     
-    header {
-        text-align: center;
+    main {
+      max-width: 75%;
     }
-}
 
-main {
-  max-width: 70%;
-}
-
-aside {
-  max-width: 25%;
+    aside {
+      max-width: 20%;
+    }
 }
 
 /* navigation */
