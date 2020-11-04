@@ -27,6 +27,7 @@ h3 {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #143774;
+  margin-top: 0; /*prevents the margins to add up with the artcile-info*/
 }
 
 h1 {
@@ -86,7 +87,7 @@ strong {
 }
 
 .article-info {
-  font-weight: 300;
+  margin: 2em 0;
 }
 
 /* =================
@@ -170,4 +171,28 @@ nav a:focus {
     nav li {
         margin: .5em 0;
     }
+}
+
+/* articles */
+
+.article-featured {
+  border-bottom: solid #707070 1px;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex; /*creates a row with article-main and article-secondary*/
+  flex-direction: column; /*puts back the row into column, 
+  but now we can rearrenge the elements inside*/
+  margin-bottom: 2em;
+}
+
+/* this block will show second */
+.article-recent-main {
+  order: 2;
+}
+/* this block will show first */
+.article-recent-secondary {
+  order: 1;
 }
