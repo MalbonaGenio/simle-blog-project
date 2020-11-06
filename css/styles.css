@@ -77,8 +77,6 @@ strong {
   text-decoration: none;
 }
 
-
-
 /* on mouse hover change of color and adding underline back */
 .article-read-more:hover,
 .article-read-more:focus {
@@ -88,6 +86,15 @@ strong {
 
 .article-info {
   margin: 2em 0;
+}
+
+.widget-title, .widget-recent-post-title {
+  font-size: 1rem;
+}
+
+.widget-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
 /* =================
@@ -114,20 +121,25 @@ header {
     background: #f8f8f8;
     padding: 2em 0;
     text-align: center;
+    margin-bottom: 3em;
 }
 
+/* when 675px or more change the layout to two column */
 @media (min-width: 675px) {
-    .container-flex {
-        flex-direction: row;
-    }
-    
-    main {
-      max-width: 75%;
-    }
+  .container-flex {
+      flex-direction: row;
+  }
+  
+  main {
+    max-width: 70%;
+  }
 
-    aside {
-      max-width: 20%;
-    }
+  aside {
+    max-width: 25%;
+    /*prevents main and aside from touching each other when the screen is small but not enough to go mobile layout. And to not become too small before switching to mobile layout*/
+    margin-left: 1em; 
+    min-width: 200px;
+  }
 }
 
 /* navigation */
@@ -140,37 +152,37 @@ nav ul {
 }
 
 nav li {
-    margin-left: 2em;
+  margin-left: 2em;
 }
 
 nav a {
-    text-decoration: none;
-    color: #707070;
-    font-weight: 700;
-    padding: .25em 0;
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25em 0;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #1792d2;
+  color: #1792d2;
 }
 
 .current-page {
-    border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #707070;
 }
 
 .current-page:hover {
-    color: #707070;
+  color: #707070;
 }
 
 @media (max-width: 675px) {
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav li {
-        margin: .5em 0;
-    }
+  nav ul {
+      flex-direction: column;
+  }
+  
+  nav li {
+      margin: .5em 0;
+  }
 }
 
 /* articles */
@@ -196,3 +208,66 @@ nav a:focus {
 .article-recent-secondary {
   order: 1;
 }
+
+/* allows to rearrenge elements on the featured article */
+.article-featured {
+  display: flex;
+  flex-direction: column;
+}
+
+/* when more than 675px recent article goes to two column style */
+@media (min-width: 675px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main{
+    width: 68%;
+
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  /* Mantain the same width of the img but making it taller without squishing it. */
+  .article-info {
+    order: -1;
+  }
+
+  .article-img {
+    order: -2;
+    min-height: 250px;
+    object-fit: cover;
+
+  } 
+}
+
+/* widgets */
+
+.sidebar-widget {
+  border: #efefef solid 20px;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid #707070 1px;
+  margin-bottom: 1em;
+}
+
+
+/*to remove the bottom border only on the last child */
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+
+}
+/*don't need to put order in the title, with -1 img will show first and then follow the html side*/
+.widget-img {
+  order: -1;
+}
+
