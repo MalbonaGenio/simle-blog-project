@@ -9,6 +9,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 1.125rem;
+  line-height: 1.6; /*to make more space between lines.*/
 }
 
 img {
@@ -86,6 +87,8 @@ strong {
   font-weight: 700;
   color: #1792D2;
   text-decoration: none;
+  text-transform: uppercase; /*makes all the letters uppercase*/
+  letter-spacing: 1px; /*more space between letters for the all caps text, so it's a bit easier to read*/
 }
 
 /* on mouse hover change of color and adding underline back */
@@ -102,11 +105,13 @@ strong {
 .widget-title, 
 .widget-recent-post-title {
   font-size: 1rem;
+  line-height: 1.4;/*override the value on body as here is a bit to much distance*/
 }
 
 .widget-title {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
+  letter-spacing: 2px; /*make more easy to read for all cap text, we can have a bit more space here than in .article-read-more following design.*/
 }
 
 .widget-recent-post-title {
@@ -177,6 +182,8 @@ nav ul {
 
 nav li {
   margin-left: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 nav a {
